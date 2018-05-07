@@ -5,23 +5,31 @@
     build-mode="COLD"
     density="xhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.2"
-    timestamp="1525720952130"
+    timestamp="1525727518439"
     token="7081471417281643524"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="323" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="70" />
     <task
         name="verifier"
-        duration="0" />
+        duration="17" />
+
+    <artifact
+        location="C:\Users\CFRat\Documents\Android\Examples\Android Studio Examples\Chat\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\CFRat\Documents\Android\Examples\Android Studio Examples\Chat\build\intermediates\instant-run-apk\debug\Chat-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -66,8 +74,17 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1525720724038"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1525727399846"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\CFRat\Documents\Android\Examples\Android Studio Examples\Chat\build\intermediates\instant-run-apk\debug\Chat-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1525727518439"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\CFRat\Documents\Android\Examples\Android Studio Examples\Chat\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -76,9 +93,5 @@
             location="C:\Users\CFRat\Documents\Android\Examples\Android Studio Examples\Chat\build\intermediates\instant-run-apk\debug\Chat-debug.apk"
             type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1525720952130"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
