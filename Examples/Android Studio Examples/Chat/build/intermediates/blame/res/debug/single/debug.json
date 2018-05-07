@@ -4,14 +4,6 @@
         "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\layout\\list_item.xml"
     },
     {
-        "merged": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\drawable_redbear.png.flat",
-        "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\drawable\\redbear.png"
-    },
-    {
-        "merged": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\drawable_red_button.xml.flat",
-        "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\drawable\\red_button.xml"
-    },
-    {
         "merged": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\layout_second.xml.flat",
         "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\layout\\second.xml"
     },

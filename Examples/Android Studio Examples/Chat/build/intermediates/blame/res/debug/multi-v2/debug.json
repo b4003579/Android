@@ -76,11 +76,9 @@
                 {
                     "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "92,151",
-                        "endColumns": "57,55",
-                        "endOffsets": "145,202"
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
                     },
                     "to": {
                         "startLines": "2,3",
@@ -93,37 +91,34 @@
                 {
                     "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "6,15,19",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "192,525,690",
-                        "endLines": "12,17,32",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "484,682,1329"
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "7,14,17",
+                        "startLines": "7,10,13",
                         "startColumns": "4,4,4",
-                        "startOffsets": "316,607,767",
-                        "endLines": "13,16,30",
+                        "startOffsets": "327,410,482",
+                        "endLines": "9,12,26",
                         "endColumns": "12,12,12",
-                        "endOffsets": "602,762,1393"
+                        "endOffsets": "405,477,1108"
                     }
                 },
                 {
                     "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "4,3,5",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "102,59,156",
-                        "endColumns": "52,41,51",
-                        "endOffsets": "150,96,203"
+                        "startLines": "-1,3,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,59,-1",
+                        "endColumns": "-1,52,-1",
+                        "endOffsets": "-1,107,-1"
                     },
                     "to": {
                         "startLines": "4,5,6",
                         "startColumns": "4,4,4",
-                        "startOffsets": "169,222,264",
-                        "endColumns": "52,41,51",
-                        "endOffsets": "217,259,311"
+                        "startOffsets": "169,222,275",
+                        "endColumns": "52,52,51",
+                        "endOffsets": "217,270,322"
                     }
                 }
             ]

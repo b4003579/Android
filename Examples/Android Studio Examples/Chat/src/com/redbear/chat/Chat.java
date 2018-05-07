@@ -24,13 +24,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Chat extends Activity {
+public class Chat extends Activity implements View.OnClickListener {
 	private final static String TAG = Chat.class.getSimpleName();
 
 	public static final String EXTRAS_DEVICE = "EXTRAS_DEVICE";
 	private TextView tv = null;
-	private EditText et = null;
-	private Button btn = null;
+	private Button btnSlowWag = null;
+    private Button btnSlowSway = null;
+    private Button btnSlowLift = null;
+    private Button btnMediumWag = null;
+    private Button btnMediumSway = null;
+    private Button btnMediumLift = null;
+    private Button btnFastWag = null;
+    private Button btnFastSway = null;
+    private Button btnFastLift = null;
 	private String mDeviceName;
 	private String mDeviceAddress;
 	private RBLService mBluetoothLeService;
@@ -78,32 +85,26 @@ public class Chat extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.second);
 
-		tv = (TextView) findViewById(R.id.textView);
-		tv.setMovementMethod(ScrollingMovementMethod.getInstance());
-		et = (EditText) findViewById(R.id.editText);
-		btn = (Button) findViewById(R.id.send);
-		btn.setOnClickListener(new OnClickListener() {
+        btnSlowWag = (Button) findViewById(R.id.btnSlowWag);
+        btnSlowWag.setOnClickListener(this); // calling onClick() method
+        btnSlowSway = (Button) findViewById(R.id.btnSlowSway);
+        btnSlowSway.setOnClickListener(this);
+        btnSlowLift = (Button) findViewById(R.id.btnSlowLift);
+        btnSlowLift.setOnClickListener(this);
 
-			@Override
-			public void onClick(View v) {
-				BluetoothGattCharacteristic characteristic = map
-						.get(RBLService.UUID_BLE_SHIELD_TX);
+        btnMediumWag = (Button) findViewById(R.id.btnMediumWag);
+        btnMediumWag.setOnClickListener(this); // calling onClick() method
+        btnMediumSway = (Button) findViewById(R.id.btnMediumSway);
+        btnMediumSway.setOnClickListener(this);
+        btnMediumLift = (Button) findViewById(R.id.btnMediumLift);
+        btnMediumLift.setOnClickListener(this);
 
-				String str = et.getText().toString();
-				byte b = 0x00;
-				byte[] tmp = str.getBytes();
-				byte[] tx = new byte[tmp.length + 1];
-				tx[0] = b;
-				for (int i = 1; i < tmp.length + 1; i++) {
-					tx[i] = tmp[i - 1];
-				}
-
-				characteristic.setValue(tx);
-				mBluetoothLeService.writeCharacteristic(characteristic);
-
-				et.setText("");
-			}
-		});
+        btnFastWag = (Button) findViewById(R.id.btnFastWag);
+        btnFastWag.setOnClickListener(this); // calling onClick() method
+        btnFastSway = (Button) findViewById(R.id.btnFastSway);
+        btnFastSway.setOnClickListener(this);
+        btnFastLift = (Button) findViewById(R.id.btnFastLift);
+        btnFastLift.setOnClickListener(this);
 
 		Intent intent = getIntent();
 
@@ -116,6 +117,49 @@ public class Chat extends Activity {
 		Intent gattServiceIntent = new Intent(this, RBLService.class);
 		bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 	}
+
+	@Override
+    public void onClick(View v) {
+        String str = "";
+
+        switch (v.getId()){
+
+            case R.id.btnSlowWag: str = "slowWag";
+            break;
+            case R.id.btnSlowSway: str = "slowSway";
+            break;
+            case R.id.btnSlowLift: str = "slowLift";
+            break;
+
+            case R.id.btnMediumWag: str = "MediumWag";
+                break;
+            case R.id.btnMediumSway: str = "MediumSway";
+                break;
+            case R.id.btnMediumLift: str = "MediumLift";
+                break;
+
+            case R.id.btnFastWag: str = "FastWag";
+                break;
+            case R.id.btnFastSway: str = "FastSway";
+                break;
+            case R.id.btnFastLift: str = "FastLift";
+                break;
+        }
+
+        BluetoothGattCharacteristic characteristic = map
+                .get(RBLService.UUID_BLE_SHIELD_TX);
+        byte b = 0x00;
+        byte[] tmp = str.getBytes();
+        byte[] tx = new byte[tmp.length + 1];
+        tx[0] = b;
+        for (int i = 1; i < tmp.length + 1; i++) {
+            tx[i] = tmp[i - 1];
+        }
+
+        characteristic.setValue(tx);
+        mBluetoothLeService.writeCharacteristic(characteristic);
+    }
+
 
 	@Override
 	protected void onResume() {
