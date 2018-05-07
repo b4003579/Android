@@ -1,0 +1,4 @@
+#Mon May 07 15:16:15 BST 2018
+base.0=C\:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,132 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "227",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "375"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "183",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "317"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-land-v13_values-sw720dp-land-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values-sw720dp-land\\dimens.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "206",
+                        "endColumns": "58",
+                        "endOffsets": "260"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "92,151",
+                        "endColumns": "57,55",
+                        "endOffsets": "145,202"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15,19",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "192,525,690",
+                        "endLines": "12,17,32",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "484,682,1329"
+                    },
+                    "to": {
+                        "startLines": "7,14,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "316,607,767",
+                        "endLines": "13,16,30",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "602,762,1393"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\CFRat\\Documents\\Android\\Examples\\Android Studio Examples\\Chat\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "102,59,156",
+                        "endColumns": "52,41,51",
+                        "endOffsets": "150,96,203"
+                    },
+                    "to": {
+                        "startLines": "4,5,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "169,222,264",
+                        "endColumns": "52,41,51",
+                        "endOffsets": "217,259,311"
+                    }
+                }
+            ]
+        }
+    ]
+}
